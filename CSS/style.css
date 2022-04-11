@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');    /* use font= font-family: 'Press Start 2P', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@700&display=swap');   /* use font= font-family: 'Ubuntu Mono', monospace; */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap'); /* use font= font-family: 'Ubuntu Mono', monospace; */
+
+:root{
+    --main-color:#7FDC84;
+}   
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin:0; 
+    padding:0;
+    box-sizing: border-box;
+    outline: none; 
+    border:none;
+    text-decoration: none;
+    transition: all .2s linear;
+    line-height: 1.5;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #000000;
+    padding-left: 30rem;
+}
+
+#menu-bars{
+    position: fixed;
+    top:1rem; right: 1rem;
+    z-index: 10000;
+    background:var(--main-color);
+    color:#fff;
+    border-radius: .5rem;
+    padding:1rem 1.5rem;
+    font-size: 3rem;
+    cursor:pointer;
+    display: none;
+}
+
+.Container{
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+}
+
+
+.Container__Pagina{
+    position: relative;
+    top: 3rem;
+    left: 0%;
+    padding: 0.75rem;
+    width: max-content;
+    border: solid 0.1rem rgb(255, 255, 255);
+    color: rgb(214, 211, 211);
+    font-family: 'Courier New', Courier, monospace;
+    animation: entrada 2s forwards;
+}
+
+@keyframes entrada {
+    from{
+        left: 0%;
+    }
+    to{
+        left: 49%;
+    }    
+}
+
+.Hero{
+    position: fixed;
+    top:0; left:0; bottom:0;
+    background:#222;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    flex-flow: column;
+    padding:8rem 2rem;
+    width:30rem;
+    text-align: center;
+}
+
+.Hero
+
+.Hero__Logo{
+    text-transform: uppercase;
+    color:#fff;
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+.Hero__Name{
+    text-transform: uppercase;
+    color:var(--main-color);
+}
+
+.Hero__Logo__Modifier{
+    position: absolute;
+    top: 2%;
+    left: 45%;
+    filter: invert(1) blur(1rem);
+}
+.Hero__Logo__Modifier:hover{
+    position: absolute;
+    top: 2%;
+    left: 43%;
+    filter: invert(1);
+}
+
+.Navbar__Links{
+    display: block;
+    font-size: 2rem;
+    color:#fff;
+    margin:2rem 0;
+}
+
+.Navbar__Links:hover{
+    letter-spacing: .2rem;
+    color:var(--main-color);
+}
+
+.Redes__Icon{
+    width: 20%;
+    margin:0.7rem;
+}
+
+.Redes__Red{
+    color: white;
+    background-image: linear-gradient(currentcolor, currentcolor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+
+.Redes__Red:hover{
+    background-size: 100% 2px;
+}
+
+
+.Main{
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    flex:1 1 40rem;
+}
+
+.Main__Hi{
+    font-size: 2rem;
+    color:var(--main-color);
+}
+
+.Main h3{
+    font-size: 4.5rem;
+    color:rgb(255, 255, 255);
+    text-transform: uppercase;
+}
+
+.Main h3 span{
+    color:var(--main-color);
+    text-transform: uppercase;
+}
+
+.Main__Info{
+    font-size: 2.5rem;
+    color:rgb(255, 255, 255);
+    padding:.5rem 0;
+}
+
+.Main__Texto{
+    font-size: 1.7rem;
+    color:rgb(172, 172, 172);
+    padding:.5rem 0;
+}
+
+.Main__Btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding:.8rem 3rem;
+    background:var(--main-color);
+    color:#fff;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+
+.Main__Btn:hover{
+    background:#111;
+    letter-spacing: .2rem;
+}
+
+.Imagen img{
+    position: absolute;
+    right: 10%;
+    top: 20%;
+    height: 40rem;
+}
+
+@media (min-width:0px) and (max-width:425px) {
+    #menu-bars{
+        display: initial;
+    }
+
+    .Hero{
+        left:-120%;
+    }
+
+    .Hero.active{
+        left:0%;
+    }
+
+    .cursor-1,
+    .cursor-2{
+        display: none;
+    }
+
+    .Imagen img{
+        position: absolute;
+        left: 20%;
+        top: 70%;
+        height: 20rem;
+    }
+}
+
+@media (min-width:426px) and (max-width:768px) {
+    #menu-bars{
+        display: initial;
+    }
+
+    .Hero{
+        left:-120%;
+    }
+
+    .Hero.active{
+        left:0%;
+    }
+
+    .cursor-1,
+    .cursor-2{
+        display: none;
+    }
+
+    .Imagen img{
+        position: absolute;
+        left: 30%;
+        top: 62%;
+        height: 25rem;
+    }
+
+}
+
+
+@media (min-width:769px) and (max-width:1023px) {
+    #menu-bars{
+        display: initial;
+    }
+
+    .Hero{
+        left:-120%;
+    }
+
+    .Hero.active{
+        left:0%;
+    }
+
+    .cursor-1,
+    .cursor-2{
+        display: none;
+    }
+
+    .Imagen img{
+        position: absolute;
+        left: 30%;
+        top: 50%;
+        height: 40rem;
+    }
+}

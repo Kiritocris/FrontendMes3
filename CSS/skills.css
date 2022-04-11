@@ -1,0 +1,199 @@
+.Skill{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    left: 10%;
+    top: 10rem;
+}
+
+.Skill__Progress{
+    flex:1 1 10rem;
+}
+
+.Skill__Progress{
+    padding:1rem 0;
+}
+
+.Skill__Progress h3{
+    display: flex;
+    justify-content: space-between;
+    padding:.7rem 0;
+    font-size: 2rem;
+    color:rgb(255, 253, 253);
+    font-weight: 400;
+}
+
+.Skill__Progress .Progress__Bar{
+    width:100%;
+    background:#ccc;
+    overflow:hidden;
+    height:1rem;
+    border-radius: 50rem;
+}
+
+.Skill__Progress .Progress__Bar span{
+    display:block;
+    height:100%;
+    background:var(--main-color);
+    border-radius: 50rem;
+}
+
+.Skill__Progress:nth-child(1) .Progress__Bar span{
+    width:30%;
+}
+
+.Skill__Progress:nth-child(2) .Progress__Bar span{
+    width:20%;
+}
+
+.Skill__Progress:nth-child(3) .Progress__Bar span{
+    width:50%;
+}
+
+.Skill__Progress:nth-child(4) .Progress__Bar span{
+    width:80%;
+}
+.Skill__Progress:nth-child(5) .Progress__Bar span{
+    width:80%;
+}
+
+.Data__Skill{
+    position: absolute;
+    top: 70%;
+    left: 40%;
+    flex:1 1 40rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+}
+
+.Skill__Box{
+    flex:1 1 15rem;
+    background:#fff;
+    padding:2rem;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+.Skill__Box h3{
+    color:var(--main-color);
+    font-size: 3rem;
+}
+
+.Skill__Box p{
+    color:#666;
+    font-size: 1.7rem;
+    padding-top: .5rem;
+}
+
+@media (min-width:0px) and (max-width:425px) {
+    .Container{
+        position: absolute;
+        left: 0;
+    }
+
+    .Container__Habilidad{
+        position: absolute;
+        margin: 1rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        font-size: 2rem;
+        top: 10rem;
+        left: 0;
+    }
+
+    .Data__Skill{
+        transform: scale(60%);
+        position: absolute;
+        top: 110%;
+        left: 40%;
+        flex:1 1 40rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap:1.5rem;
+    }
+
+    .Skill{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 120%;
+        left: 10%;
+        top: 10rem;
+    }
+}
+
+@media (min-width:426px) and (max-width:768px) {
+    .Container{
+        position: absolute;
+        left: 15%;
+    }
+
+    .Container__Habilidad{
+        position: absolute;
+        margin: 1rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        font-size: 2rem;
+        top: 10rem;
+        left: 0;
+    }
+
+    .Data__Skill{
+        position: absolute;
+        top: 30%;
+        left: 170%;
+        flex:1 1 40rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap:1.5rem;
+    } 
+
+    .Skill{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 120%;
+        left: 10%;
+        top: 10rem;
+    }
+    
+}
+
+
+@media (min-width:769px) and (max-width:1023px) {
+    .Container{
+        position: absolute;
+        left: 20%;
+    }
+
+    .Container__Habilidad{
+        position: absolute;
+        margin: 1rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        font-size: 2rem;
+        top: 10rem;
+        left: 0;
+    }
+
+    .Data__Skill{
+        position: absolute;
+        top: 30%;
+        left: 170%;
+        flex:1 1 40rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap:1.5rem;
+    } 
+
+    .Skill{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 120%;
+        left: 10%;
+        top: 10rem;
+    }   
+}

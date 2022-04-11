@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.Container__Habilidad{
+    position: absolute;
+    margin: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 2rem;
+    top: 10rem;
+}
+
+
+.Habilidad__Pieza{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.Habilidad__Pieza__Order{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.Pieza__Intro{
+    margin: 5%;
+    font-size: 4rem;
+    color: #e38528;
+}
+
+.Pieza__Infoextra{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+}
+
+.Habilidad__Data{
+    display: grid;
+    padding-top: 5%;
+    grid-template-columns: 1fr 1fr;
+}
+
+.Info__Text{
+    font-size: 1.5rem;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.Data__texto{
+    font-size: 2.5rem;
+    color: #aca49c;
+}
+
+.Habilidad__Perfil{
+    border: solid white .2rem;
+    border-radius: 150rem;
+    width: 80%;
+    
+}
+
+
+@media (min-width:0px) and (max-width:425px) {
+    .Container{
+        position: absolute;
+        left: 0;
+    }
+
+    .Container__Habilidad{
+        position: absolute;
+        margin: 1rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        font-size: 2rem;
+        top: 10rem;
+        left: 0;
+    }
+}
+
+@media (min-width:426px) and (max-width:768px) {
+    .Container{
+        position: absolute;
+        left: 13%;
+    }   
+
+    .Container__Habilidad{
+        position: absolute;
+        margin: 1rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        font-size: 2rem;
+        top: 10rem;
+        left: 0;
+    }
+}
+
+
+@media (min-width:769px) and (max-width:1023px) {
+    .Container{
+        position: absolute;
+        left: 18%;
+    }   
+
+    .Container__Habilidad{
+        position: absolute;
+        margin: 1rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        font-size: 2rem;
+        top: 10rem;
+        left: 0;
+    }
+}
